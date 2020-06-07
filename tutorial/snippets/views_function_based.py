@@ -35,7 +35,7 @@ def snippet_detail(request, pk, format=None):
 
     if request.method == 'GET':
         serializer = SnippetSerializer(snippet)
-        return Response(serializer.data, status=status.HTTP_200_OK)
+        return Response(serializer.data)
 
     elif request.method == 'PUT':
         serializer = SnippetSerializer(snippet, data=request.data)
