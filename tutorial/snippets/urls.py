@@ -4,6 +4,7 @@ from snippets import views_function_based
 from snippets import views_class_based
 from snippets import views_class_based_mixins
 from snippets import views_class_based_generic
+from snippets import views_class_based_generic_authenticated
 
 # function-based --> class-based -->
 urlpatterns = [
@@ -13,8 +14,12 @@ urlpatterns = [
     # path('snippets/<int:pk>', views_class_based.SnippetDetail.as_view()),
     # path('snippets/', views_class_based_mixins.SnippetList.as_view()),
     # path('snippets/<int:pk>', views_class_based_mixins.SnippetDetail.as_view()),
-    path('snippets/', views_class_based_generic.SnippetList.as_view()),
-    path('snippets/<int:pk>', views_class_based_generic.SnippetDetail.as_view()),
+    # path('snippets/', views_class_based_generic.SnippetList.as_view()),
+    # path('snippets/<int:pk>', views_class_based_generic.SnippetDetail.as_view()),
+    path('snippets/', views_class_based_generic_authenticated.SnippetList.as_view()),
+    path('snippets/<int:pk>', views_class_based_generic_authenticated.SnippetDetail.as_view()),
+    path('users/', views_class_based_generic_authenticated.UserList.as_view()),
+    path('users/<int:pk>', views_class_based_generic_authenticated.UserDetail.as_view()),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)

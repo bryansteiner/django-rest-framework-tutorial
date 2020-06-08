@@ -5,3 +5,5 @@
 [Tutorial 2: Requests and Responses](https://www.django-rest-framework.org/tutorial/2-requests-and-responses/)
 
 [Tutorial 3: Class-based Views](https://www.django-rest-framework.org/tutorial/3-class-based-views/)
+
+[Tutorial 4: Authentication & Permissions](https://www.django-rest-framework.org/tutorial/4-authentication-and-permissions/)
