@@ -6,6 +6,8 @@ from rest_framework import permissions
 from snippets.permissions import IsOwnerOrReadOnly
 
 
+# Views with required permissions + authentication
+
 class SnippetList(generics.ListCreateAPIView):
     queryset = Snippet.objects.all()
     serializer_class = SnippetSerializer

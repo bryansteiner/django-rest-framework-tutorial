@@ -4,6 +4,8 @@ from rest_framework import mixins
 from rest_framework import generics
 
 
+# Class-based views using mixins
+
 class SnippetList(mixins.ListModelMixin,
                   mixins.CreateModelMixin,
                   generics.GenericAPIView):
